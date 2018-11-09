@@ -46,7 +46,7 @@ def Smail(attachment=None):
 		server = zmail.server('xxxxx@yyy', 'password')#发件人邮箱账户及密码
 		server.send_mail(['xxxx1@yyy','xxxx2@yyy','xxxx3@yyy'], mail)#收件人邮箱列表
 		if attachment==[] or attachment is None :
-			print('Sent Successfully @',time.strftime("%Y/%m/%d %H:%M:%S", time.localtime()))
+			print('Sent Successfully @',time.strftime("%Y/%m/%d %H:%M:%S", time.localtime()),'#With no attachments.')
 		else:
 			print('Sent Successfully @',time.strftime("%Y/%m/%d %H:%M:%S", time.localtime()),'#Pay attention to attachments',[''.join(re.sub('(.*?/)','',i)) for i in attachment])#打印添加的附件文件名称
 	except:
