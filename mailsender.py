@@ -59,5 +59,6 @@ if __name__ == '__main__':
 	attachment=[ph+filename for filename in files]
 	Smail(attachment)
 
+
 #Tips:如果指定的文件夹内包含子文件夹，不指定文件类型或为空（tp=''）的情况下，会导致邮件发送失败，通过设置tp='.'或不添加tp参数，可避免文件夹作为上传附件的异常错误。
 
