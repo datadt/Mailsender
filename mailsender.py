@@ -17,14 +17,7 @@ import re
 def fs(ph,tp='.',kw=None):
 	fp=[]#ph文件路径/tp文件类型/kw关键字段
 	for filename in os.listdir(ph):
-		if kw is None:
-			if tp is None:
-				fp.append(filename)
-			elif tp in filename:
-				fp.append(filename)
-			else:
-				None
-		elif kw in filename:
+		if kw is None or kw in filename:
 			if tp is None:
 				fp.append(filename)
 			elif tp in filename:
